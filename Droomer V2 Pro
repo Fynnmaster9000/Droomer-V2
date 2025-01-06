@@ -1,0 +1,866 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local OpenButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Admin = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Fullbright = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local speed100 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local speed350 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local speed75 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+local esp = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UIGradient_6 = Instance.new("UIGradient")
+local CloseButton = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local UIGradient_7 = Instance.new("UIGradient")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = ScreenGui
+OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenButton.BorderSizePixel = 0
+OpenButton.Position = UDim2.new(0.010844307, 0, 0.419315398, 0)
+OpenButton.Size = UDim2.new(0, 60, 0, 61)
+OpenButton.Image = "rbxassetid://126094068862842"
+
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = OpenButton
+
+TextLabel.Parent = OpenButton
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.100000001, 0, 0.0655737668, 0)
+TextLabel.Size = UDim2.new(0, 48, 0, 52)
+TextLabel.Font = Enum.Font.PermanentMarker
+TextLabel.Text = "D"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Admin.Name = "Admin"
+Admin.Parent = ScreenGui
+Admin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Admin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Admin.BorderSizePixel = 0
+Admin.Position = UDim2.new(0.316387713, 0, 0.274961114, 0)
+Admin.Size = UDim2.new(0, 474, 0, 45)
+
+UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.Parent = Admin
+
+Frame.Parent = Admin
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.460000455, 0)
+Frame.Size = UDim2.new(0, 474, 0, 247)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 8)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 20, 199))}
+UIGradient.Parent = Frame
+
+TextLabel_2.Parent = Admin
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 9.15527323e-07, 0)
+TextLabel_2.Size = UDim2.new(0, 79, 0, 23)
+TextLabel_2.Font = Enum.Font.Creepster
+TextLabel_2.Text = "Droomer"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Admin
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.143556282, 0, -0.100000307, 0)
+TextLabel_3.Size = UDim2.new(0, 215, 0, 32)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "Pro Blox Fruits Version"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 20.000
+TextLabel_3.TextWrapped = true
+
+Fullbright.Name = "Fullbright"
+Fullbright.Parent = Admin
+Fullbright.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fullbright.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fullbright.BorderSizePixel = 0
+Fullbright.Position = UDim2.new(0.0342577472, 0, 0.680000007, 0)
+Fullbright.Size = UDim2.new(0, 164, 0, 56)
+Fullbright.Font = Enum.Font.Unknown
+Fullbright.Text = "Turn On Fullbright"
+Fullbright.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fullbright.TextScaled = true
+Fullbright.TextSize = 14.000
+Fullbright.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(1, 0)
+UICorner_3.Parent = Fullbright
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 8)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 20, 199))}
+UIGradient_2.Parent = Fullbright
+
+speed100.Name = "speed 100"
+speed100.Parent = Admin
+speed100.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+speed100.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed100.BorderSizePixel = 0
+speed100.Position = UDim2.new(0.0340000018, 0, 3.22000003, 0)
+speed100.Size = UDim2.new(0, 164, 0, 50)
+speed100.Font = Enum.Font.Unknown
+speed100.Text = "Speed 100 add"
+speed100.TextColor3 = Color3.fromRGB(255, 255, 255)
+speed100.TextScaled = true
+speed100.TextSize = 14.000
+speed100.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+speed100.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = speed100
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 8)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 20, 199))}
+UIGradient_3.Parent = speed100
+
+speed350.Name = "speed 350"
+speed350.Parent = Admin
+speed350.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+speed350.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed350.BorderSizePixel = 0
+speed350.Position = UDim2.new(0.0340000018, 0, 4.48000002, 0)
+speed350.Size = UDim2.new(0, 164, 0, 50)
+speed350.Modal = true
+speed350.Font = Enum.Font.Unknown
+speed350.Text = "Speed 350 add"
+speed350.TextColor3 = Color3.fromRGB(255, 255, 255)
+speed350.TextScaled = true
+speed350.TextSize = 14.000
+speed350.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = speed350
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 8)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 20, 199))}
+UIGradient_4.Parent = speed350
+
+speed75.Name = "speed 75"
+speed75.Parent = Admin
+speed75.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+speed75.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed75.BorderSizePixel = 0
+speed75.Position = UDim2.new(0.0340000018, 0, 2, 0)
+speed75.Size = UDim2.new(0, 164, 0, 50)
+speed75.Font = Enum.Font.Unknown
+speed75.Text = "Speed 75 add"
+speed75.TextColor3 = Color3.fromRGB(255, 255, 255)
+speed75.TextScaled = true
+speed75.TextSize = 14.000
+speed75.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(1, 0)
+UICorner_6.Parent = speed75
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 8)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 20, 199))}
+UIGradient_5.Parent = speed75
+
+esp.Name = "esp"
+esp.Parent = Admin
+esp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+esp.BorderSizePixel = 0
+esp.Position = UDim2.new(0.394253254, 0, 0.679999948, 0)
+esp.Size = UDim2.new(0, 164, 0, 56)
+esp.Font = Enum.Font.Unknown
+esp.Text = "Enable ESP"
+esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+esp.TextScaled = true
+esp.TextSize = 14.000
+esp.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(1, 0)
+UICorner_7.Parent = esp
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 8)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 20, 199))}
+UIGradient_6.Parent = esp
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = Admin
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.918433905, 0, -0.099999696, 0)
+CloseButton.Size = UDim2.new(0, 42, 0, 30)
+CloseButton.Font = Enum.Font.SourceSans
+CloseButton.Text = "X"
+CloseButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14.000
+CloseButton.TextWrapped = true
+
+ImageLabel.Parent = Admin
+ImageLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.828036666, 0, 3.99777842, 0)
+ImageLabel.Size = UDim2.new(0, 61, 0, 60)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_8.CornerRadius = UDim.new(1, 0)
+UICorner_8.Parent = ImageLabel
+
+TextLabel_4.Parent = ImageLabel
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(-0.320392549, 0, 1, 0)
+TextLabel_4.Size = UDim2.new(0, 100, 0, 28)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Name"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 20, 199))}
+UIGradient_7.Parent = Admin
+
+-- Scripts:
+
+local function XGHXYV_fake_script() -- OpenButton.DraggableGUI 
+	local script = Instance.new('LocalScript', OpenButton)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(XGHXYV_fake_script)()
+local function ODWJ_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	-- LocalScript inside ScreenGui
+	
+	-- References to GUI elements
+	local screenGui = script.Parent
+	local mainFrame = screenGui:WaitForChild("Admin")
+	local openButton = screenGui:WaitForChild("OpenButton")
+	local closeButton = mainFrame:WaitForChild("CloseButton")
+	
+	-- Initial state
+	mainFrame.Visible = false
+	openButton.Visible = true
+	
+	-- Open button functionality
+	openButton.MouseButton1Click:Connect(function()
+		mainFrame.Visible = true
+		openButton.Visible = false
+	end)
+	
+	-- Close button functionality
+	closeButton.MouseButton1Click:Connect(function()
+		mainFrame.Visible = false
+		openButton.Visible = true
+	end)
+	
+end
+coroutine.wrap(ODWJ_fake_script)()
+local function VABKCJ_fake_script() -- Admin.DraggableGUI 
+	local script = Instance.new('LocalScript', Admin)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(VABKCJ_fake_script)()
+local function XOIHQYT_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local frame = script.Parent -- The frame to which the gradient is attached
+	local gradient = frame:FindFirstChild("UIGradient") -- The UIGradient object
+	
+	-- Check if the UIGradient exists
+	if not gradient then
+		warn("No UIGradient found in the frame!")
+		return
+	end
+	
+	-- Animation settings
+	local speed = 0.005 -- Controls the speed of the gradient movement
+	local waitTime = 0.02 -- Controls how smooth the transition is
+	
+	-- Infinite loop animation
+	while true do
+		-- Increment the offset for a smooth scrolling effect
+		gradient.Offset = gradient.Offset + Vector2.new(speed, 0)
+	
+		-- When the gradient reaches the end, reset it back to the beginning
+		if gradient.Offset.X >= 1 then
+			gradient.Offset = Vector2.new(0, gradient.Offset.Y)
+		end
+	
+		-- Wait to create smooth animation
+		wait(waitTime)
+	end
+	
+end
+coroutine.wrap(XOIHQYT_fake_script)()
+local function KFUP_fake_script() -- Fullbright.LocalScript 
+	local script = Instance.new('LocalScript', Fullbright)
+
+	local Lighting = game:GetService("Lighting")
+	local button = script.Parent
+	
+	local isFullbright = false -- Tracks whether Fullbright is active
+	local originalLightingSettings = {}
+	
+	-- Function to save original lighting settings
+	local function saveOriginalSettings()
+		originalLightingSettings.Brightness = Lighting.Brightness
+		originalLightingSettings.Ambient = Lighting.Ambient
+		originalLightingSettings.OutdoorAmbient = Lighting.OutdoorAmbient
+		originalLightingSettings.ClockTime = Lighting.ClockTime
+	end
+	
+	-- Function to apply Fullbright settings
+	local function applyFullbright()
+		Lighting.Brightness = 2
+		Lighting.Ambient = Color3.new(1, 1, 1)
+		Lighting.OutdoorAmbient = Color3.new(1, 1, 1)
+		Lighting.ClockTime = 14 -- Noon
+	end
+	
+	-- Function to restore original lighting settings
+	local function restoreOriginalSettings()
+		for key, value in pairs(originalLightingSettings) do
+			Lighting[key] = value
+		end
+	end
+	
+	-- Function to toggle Fullbright
+	local function toggleFullbright()
+		if not isFullbright then
+			saveOriginalSettings()
+			applyFullbright()
+			button.Text = "Turn Off Fullbright"
+		else
+			restoreOriginalSettings()
+			button.Text = "Turn On Fullbright"
+		end
+		isFullbright = not isFullbright
+	end
+	
+	-- Listen for button click
+	button.MouseButton1Click:Connect(toggleFullbright)
+	
+end
+coroutine.wrap(KFUP_fake_script)()
+local function BGBDB_fake_script() -- Fullbright.LocalScript 
+	local script = Instance.new('LocalScript', Fullbright)
+
+	local frame = script.Parent -- The frame to which the gradient is attached
+	local gradient = frame:FindFirstChild("UIGradient") -- The UIGradient object
+	
+	-- Check if the UIGradient exists
+	if not gradient then
+		warn("No UIGradient found in the frame!")
+		return
+	end
+	
+	-- Animation settings
+	local speed = 0.005 -- Controls the speed of the gradient movement
+	local waitTime = 0.02 -- Controls how smooth the transition is
+	
+	-- Infinite loop animation
+	while true do
+		-- Increment the offset for a smooth scrolling effect
+		gradient.Offset = gradient.Offset + Vector2.new(speed, 0)
+	
+		-- When the gradient reaches the end, reset it back to the beginning
+		if gradient.Offset.X >= 1 then
+			gradient.Offset = Vector2.new(0, gradient.Offset.Y)
+		end
+	
+		-- Wait to create smooth animation
+		wait(waitTime)
+	end
+	
+end
+coroutine.wrap(BGBDB_fake_script)()
+local function JSYQRZK_fake_script() -- speed100.LocalScript 
+	local script = Instance.new('LocalScript', speed100)
+
+	local Players = game:GetService("Players")
+	local button = script.Parent
+	
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	local isFast = false -- Tracks if speed is boosted
+	local normalSpeed = 16 -- Default walking speed
+	local boostedSpeed = 100 -- Boosted walking speed
+	
+	-- Function to toggle speed
+	local function toggleSpeed()
+		if not isFast then
+			humanoid.WalkSpeed = boostedSpeed
+			button.Text = "Set Speed to Normal"
+		else
+			humanoid.WalkSpeed = normalSpeed
+			button.Text = "add 100 Speed"
+		end
+		isFast = not isFast
+	end
+	
+	-- Listen for button click
+	button.MouseButton1Click:Connect(toggleSpeed)
+	
+end
+coroutine.wrap(JSYQRZK_fake_script)()
+local function MMHGXFE_fake_script() -- speed100.LocalScript 
+	local script = Instance.new('LocalScript', speed100)
+
+	local frame = script.Parent -- The frame to which the gradient is attached
+	local gradient = frame:FindFirstChild("UIGradient") -- The UIGradient object
+	
+	-- Check if the UIGradient exists
+	if not gradient then
+		warn("No UIGradient found in the frame!")
+		return
+	end
+	
+	-- Animation settings
+	local speed = 0.005 -- Controls the speed of the gradient movement
+	local waitTime = 0.02 -- Controls how smooth the transition is
+	
+	-- Infinite loop animation
+	while true do
+		-- Increment the offset for a smooth scrolling effect
+		gradient.Offset = gradient.Offset + Vector2.new(speed, 0)
+	
+		-- When the gradient reaches the end, reset it back to the beginning
+		if gradient.Offset.X >= 1 then
+			gradient.Offset = Vector2.new(0, gradient.Offset.Y)
+		end
+	
+		-- Wait to create smooth animation
+		wait(waitTime)
+	end
+	
+end
+coroutine.wrap(MMHGXFE_fake_script)()
+local function ZAMLDL_fake_script() -- speed350.LocalScript 
+	local script = Instance.new('LocalScript', speed350)
+
+	local Players = game:GetService("Players")
+	local button = script.Parent
+	
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	local isFast = false -- Tracks if speed is boosted
+	local normalSpeed = 16 -- Default walking speed
+	local boostedSpeed = 350 -- Boosted walking speed
+	
+	-- Function to toggle speed
+	local function toggleSpeed()
+		if not isFast then
+			humanoid.WalkSpeed = boostedSpeed
+			button.Text = "Set Speed to Normal"
+		else
+			humanoid.WalkSpeed = normalSpeed
+			button.Text = "add 350 Speed"
+		end
+		isFast = not isFast
+	end
+	
+	-- Listen for button click
+	button.MouseButton1Click:Connect(toggleSpeed)
+	
+end
+coroutine.wrap(ZAMLDL_fake_script)()
+local function XAXE_fake_script() -- speed350.LocalScript 
+	local script = Instance.new('LocalScript', speed350)
+
+	local frame = script.Parent -- The frame to which the gradient is attached
+	local gradient = frame:FindFirstChild("UIGradient") -- The UIGradient object
+	
+	-- Check if the UIGradient exists
+	if not gradient then
+		warn("No UIGradient found in the frame!")
+		return
+	end
+	
+	-- Animation settings
+	local speed = 0.005 -- Controls the speed of the gradient movement
+	local waitTime = 0.02 -- Controls how smooth the transition is
+	
+	-- Infinite loop animation
+	while true do
+		-- Increment the offset for a smooth scrolling effect
+		gradient.Offset = gradient.Offset + Vector2.new(speed, 0)
+	
+		-- When the gradient reaches the end, reset it back to the beginning
+		if gradient.Offset.X >= 1 then
+			gradient.Offset = Vector2.new(0, gradient.Offset.Y)
+		end
+	
+		-- Wait to create smooth animation
+		wait(waitTime)
+	end
+	
+end
+coroutine.wrap(XAXE_fake_script)()
+local function XASKEDA_fake_script() -- speed75.LocalScript 
+	local script = Instance.new('LocalScript', speed75)
+
+	local Players = game:GetService("Players")
+	local button = script.Parent
+	
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	local isFast = false -- Tracks if speed is boosted
+	local normalSpeed = 16 -- Default walking speed
+	local boostedSpeed = 75 -- Boosted walking speed
+	
+	-- Function to toggle speed
+	local function toggleSpeed()
+		if not isFast then
+			humanoid.WalkSpeed = boostedSpeed
+			button.Text = "Set Speed to Normal"
+		else
+			humanoid.WalkSpeed = normalSpeed
+			button.Text = "add 75 Speed"
+		end
+		isFast = not isFast
+	end
+	
+	-- Listen for button click
+	button.MouseButton1Click:Connect(toggleSpeed)
+	
+end
+coroutine.wrap(XASKEDA_fake_script)()
+local function MYZR_fake_script() -- speed75.LocalScript 
+	local script = Instance.new('LocalScript', speed75)
+
+	local frame = script.Parent -- The frame to which the gradient is attached
+	local gradient = frame:FindFirstChild("UIGradient") -- The UIGradient object
+	
+	-- Check if the UIGradient exists
+	if not gradient then
+		warn("No UIGradient found in the frame!")
+		return
+	end
+	
+	-- Animation settings
+	local speed = 0.005 -- Controls the speed of the gradient movement
+	local waitTime = 0.02 -- Controls how smooth the transition is
+	
+	-- Infinite loop animation
+	while true do
+		-- Increment the offset for a smooth scrolling effect
+		gradient.Offset = gradient.Offset + Vector2.new(speed, 0)
+	
+		-- When the gradient reaches the end, reset it back to the beginning
+		if gradient.Offset.X >= 1 then
+			gradient.Offset = Vector2.new(0, gradient.Offset.Y)
+		end
+	
+		-- Wait to create smooth animation
+		wait(waitTime)
+	end
+	
+end
+coroutine.wrap(MYZR_fake_script)()
+local function EBQV_fake_script() -- esp.LocalScript 
+	local script = Instance.new('LocalScript', esp)
+
+	local button = script.Parent
+	local espActive = false -- Tracks whether ESP is active
+	local updateInterval = 0.5 -- Interval in seconds for updating ESP
+	
+	-- Function to create ESP for a target object
+	local function createESP(target, color)
+		if not target:FindFirstChild("ESPHighlight") then
+			local highlight = Instance.new("Highlight")
+			highlight.Name = "ESPHighlight"
+			highlight.Parent = target
+			highlight.FillColor = color or Color3.fromRGB(0, 255, 0) -- Default to green
+			highlight.OutlineColor = Color3.fromRGB(255, 255, 255) -- White outline
+			highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+		end
+	
+		if not target:FindFirstChild("ESPBillboard") then
+			local billboard = Instance.new("BillboardGui")
+			billboard.Name = "ESPBillboard"
+			billboard.Parent = target
+			billboard.Adornee = target:FindFirstChild("HumanoidRootPart") or target.PrimaryPart
+			billboard.Size = UDim2.new(0, 200, 0, 50)
+			billboard.StudsOffset = Vector3.new(0, 3, 0)
+			billboard.AlwaysOnTop = true
+	
+			local textLabel = Instance.new("TextLabel")
+			textLabel.Parent = billboard
+			textLabel.Size = UDim2.new(1, 0, 1, 0)
+			textLabel.BackgroundTransparency = 1
+			textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			textLabel.TextStrokeTransparency = 0
+			textLabel.TextScaled = true
+	
+			local humanoid = target:FindFirstChild("Humanoid")
+			if humanoid then
+				textLabel.Text = target.Name .. " | Health: " .. math.floor(humanoid.Health) .. "/" .. math.floor(humanoid.MaxHealth)
+	
+				-- Update health dynamically
+				humanoid:GetPropertyChangedSignal("Health"):Connect(function()
+					textLabel.Text = target.Name .. " | Health: " .. math.floor(humanoid.Health) .. "/" .. math.floor(humanoid.MaxHealth)
+				end)
+			end
+		end
+	end
+	
+	-- Function to remove ESP from a target object
+	local function removeESP(target)
+		local espHighlight = target:FindFirstChild("ESPHighlight")
+		if espHighlight then
+			espHighlight:Destroy()
+		end
+	
+		local espBillboard = target:FindFirstChild("ESPBillboard")
+		if espBillboard then
+			espBillboard:Destroy()
+		end
+	end
+	
+	-- Function to update ESP continuously
+	local function updateESP()
+		while espActive do
+			local player = game.Players.LocalPlayer
+			local character = player.Character or player.CharacterAdded:Wait()
+			local rootPart = character:FindFirstChild("HumanoidRootPart")
+	
+			if rootPart then
+				for _, entity in pairs(workspace:GetDescendants()) do
+					if entity:IsA("Model") and entity:FindFirstChild("Humanoid") then
+						local targetRoot = entity:FindFirstChild("HumanoidRootPart") or entity.PrimaryPart
+						if targetRoot and (targetRoot.Position - rootPart.Position).Magnitude <= 300 then
+							createESP(entity, Color3.fromRGB(0, 255, 0)) -- Green for humanoids
+						else
+							removeESP(entity) -- Remove ESP for entities outside the radius
+						end
+					end
+				end
+			end
+	
+			wait(updateInterval)
+		end
+	
+		-- Remove all ESP when deactivated
+		for _, entity in pairs(workspace:GetDescendants()) do
+			if entity:IsA("Model") and entity:FindFirstChild("Humanoid") then
+				removeESP(entity)
+			end
+		end
+	end
+	
+	-- Function to toggle ESP
+	local function toggleESP()
+		espActive = not espActive
+		button.Text = espActive and "Disable ESP" or "Enable ESP"
+	
+		if espActive then
+			coroutine.wrap(updateESP)()
+		end
+	end
+	
+	-- Listen for button click
+	button.MouseButton1Click:Connect(toggleESP)
+end
+coroutine.wrap(EBQV_fake_script)()
+local function SSWNVQ_fake_script() -- esp.LocalScript 
+	local script = Instance.new('LocalScript', esp)
+
+	local frame = script.Parent -- The frame to which the gradient is attached
+	local gradient = frame:FindFirstChild("UIGradient") -- The UIGradient object
+	
+	-- Check if the UIGradient exists
+	if not gradient then
+		warn("No UIGradient found in the frame!")
+		return
+	end
+	
+	-- Animation settings
+	local speed = 0.005 -- Controls the speed of the gradient movement
+	local waitTime = 0.02 -- Controls how smooth the transition is
+	
+	-- Infinite loop animation
+	while true do
+		-- Increment the offset for a smooth scrolling effect
+		gradient.Offset = gradient.Offset + Vector2.new(speed, 0)
+	
+		-- When the gradient reaches the end, reset it back to the beginning
+		if gradient.Offset.X >= 1 then
+			gradient.Offset = Vector2.new(0, gradient.Offset.Y)
+		end
+	
+		-- Wait to create smooth animation
+		wait(waitTime)
+	end
+	
+end
+coroutine.wrap(SSWNVQ_fake_script)()
+local function FNTWFAX_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	
+	local userid = player.UserId
+	local thumbtype = Enum.ThumbnailType.HeadShot
+	local thumbsize = Enum.ThumbnailSize.Size420x420
+	
+	local content = Players:GetUserThumbnailAsync(userid, thumbtype, thumbsize)
+	
+	local ImgaeLabel = script.Parent
+	ImgaeLabel.Image = content
+end
+coroutine.wrap(FNTWFAX_fake_script)()
+local function CLTITW_fake_script() -- TextLabel_4.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_4)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.Text = player.Name
+end
+coroutine.wrap(CLTITW_fake_script)()
+local function LCJLISP_fake_script() -- Admin.LocalScript 
+	local script = Instance.new('LocalScript', Admin)
+
+	local frame = script.Parent -- The frame to which the gradient is attached
+	local gradient = frame:FindFirstChild("UIGradient") -- The UIGradient object
+	
+	-- Check if the UIGradient exists
+	if not gradient then
+		warn("No UIGradient found in the frame!")
+		return
+	end
+	
+	-- Animation settings
+	local speed = 0.005 -- Controls the speed of the gradient movement
+	local waitTime = 0.02 -- Controls how smooth the transition is
+	
+	-- Infinite loop animation
+	while true do
+		-- Increment the offset for a smooth scrolling effect
+		gradient.Offset = gradient.Offset + Vector2.new(speed, 0)
+	
+		-- When the gradient reaches the end, reset it back to the beginning
+		if gradient.Offset.X >= 1 then
+			gradient.Offset = Vector2.new(0, gradient.Offset.Y)
+		end
+	
+		-- Wait to create smooth animation
+		wait(waitTime)
+	end
+	
+end
+coroutine.wrap(LCJLISP_fake_script)()
