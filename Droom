@@ -1,0 +1,472 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local OpenButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local WAVEXECUTORVIRUS = Instance.new("Frame")
+local CloseButton = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local ToggleButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local UIGradient_4 = Instance.new("UIGradient")
+local esp = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+local noclip = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_6 = Instance.new("UIGradient")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = ScreenGui
+OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenButton.BorderSizePixel = 0
+OpenButton.Position = UDim2.new(0.0108443052, 0, 0.484524399, 0)
+OpenButton.Size = UDim2.new(0, 57, 0, 54)
+OpenButton.Image = "rbxassetid://126094068862842"
+
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = OpenButton
+
+TextLabel.Parent = OpenButton
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.0025640789, 0, -0.117645264, 0)
+TextLabel.Size = UDim2.new(0, 57, 0, 60)
+TextLabel.Font = Enum.Font.PermanentMarker
+TextLabel.Text = "D"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 157, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+UIGradient.Parent = OpenButton
+
+WAVEXECUTORVIRUS.Name = "WAVEXECUTORVIRUS"
+WAVEXECUTORVIRUS.Parent = ScreenGui
+WAVEXECUTORVIRUS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WAVEXECUTORVIRUS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WAVEXECUTORVIRUS.BorderSizePixel = 0
+WAVEXECUTORVIRUS.Position = UDim2.new(0.306960732, 0, 0.293370903, 0)
+WAVEXECUTORVIRUS.Size = UDim2.new(0, 589, 0, 25)
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = WAVEXECUTORVIRUS
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.897660792, 0, -0.318181813, 0)
+CloseButton.Size = UDim2.new(0, 41, 0, 35)
+CloseButton.Font = Enum.Font.SourceSans
+CloseButton.Text = "X"
+CloseButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.TextSize = 35.000
+
+Frame.Parent = WAVEXECUTORVIRUS
+Frame.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.894999444, 0)
+Frame.Size = UDim2.new(0, 589, 0, 296)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 157, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+UIGradient_2.Parent = Frame
+
+TextLabel_2.Parent = WAVEXECUTORVIRUS
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.00122619525, 0, 0.119999997, 0)
+TextLabel_2.Size = UDim2.new(0, 89, 0, 22)
+TextLabel_2.Font = Enum.Font.LuckiestGuy
+TextLabel_2.Text = "Droomer"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+ToggleButton.Name = "ToggleButton"
+ToggleButton.Parent = WAVEXECUTORVIRUS
+ToggleButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ToggleButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ToggleButton.BorderSizePixel = 0
+ToggleButton.Position = UDim2.new(0.0197475497, 0, 1.24362946, 0)
+ToggleButton.Size = UDim2.new(0, 108, 0, 34)
+ToggleButton.Font = Enum.Font.Arcade
+ToggleButton.Text = "Aimbot: OFF"
+ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButton.TextSize = 14.000
+
+UICorner_2.CornerRadius = UDim.new(1, 0)
+UICorner_2.Parent = ToggleButton
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 157, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+UIGradient_3.Parent = ToggleButton
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 157, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+UIGradient_4.Parent = WAVEXECUTORVIRUS
+
+esp.Name = "esp"
+esp.Parent = WAVEXECUTORVIRUS
+esp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+esp.BorderSizePixel = 0
+esp.Position = UDim2.new(0.0197476186, 0, 3.04362917, 0)
+esp.Size = UDim2.new(0, 108, 0, 34)
+esp.Font = Enum.Font.Arcade
+esp.Text = "Enable ESP"
+esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+esp.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(1, 0)
+UICorner_3.Parent = esp
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 157, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+UIGradient_5.Parent = esp
+
+noclip.Name = "noclip"
+noclip.Parent = WAVEXECUTORVIRUS
+noclip.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+noclip.BorderSizePixel = 0
+noclip.Position = UDim2.new(0.0197476186, 0, 4.96362925, 0)
+noclip.Size = UDim2.new(0, 108, 0, 34)
+noclip.Font = Enum.Font.Arcade
+noclip.Text = "Noclip:off"
+noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+noclip.TextScaled = true
+noclip.TextSize = 14.000
+noclip.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = noclip
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 157, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+UIGradient_6.Parent = noclip
+
+TextLabel_3.Parent = ScreenGui
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.390831739, 0, 0.294816643, 0)
+TextLabel_3.Size = UDim2.new(0, 148, 0, 22)
+TextLabel_3.Font = Enum.Font.LuckiestGuy
+TextLabel_3.Text = "Rivals edition"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+-- Scripts:
+
+local function PWOZVA_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	-- LocalScript inside ScreenGui
+	
+	-- References to GUI elements
+	local screenGui = script.Parent
+	local mainFrame = screenGui:WaitForChild("WAVEXECUTORVIRUS")
+	local openButton = screenGui:WaitForChild("OpenButton")
+	local closeButton = mainFrame:WaitForChild("CloseButton")
+	
+	-- Initial state
+	mainFrame.Visible = false
+	openButton.Visible = true
+	
+	-- Open button functionality
+	openButton.MouseButton1Click:Connect(function()
+		mainFrame.Visible = true
+		openButton.Visible = false
+	end)
+	
+	-- Close button functionality
+	closeButton.MouseButton1Click:Connect(function()
+		mainFrame.Visible = false
+		openButton.Visible = true
+	end)
+	
+end
+coroutine.wrap(PWOZVA_fake_script)()
+local function ZJOWREI_fake_script() -- OpenButton.DraggableGUI 
+	local script = Instance.new('LocalScript', OpenButton)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(ZJOWREI_fake_script)()
+local function ZMBIQG_fake_script() -- WAVEXECUTORVIRUS.DraggableGUI 
+	local script = Instance.new('LocalScript', WAVEXECUTORVIRUS)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(ZMBIQG_fake_script)()
+local function DCDDMMK_fake_script() -- ToggleButton.LocalScript 
+	local script = Instance.new('LocalScript', ToggleButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer:Kick("Aimbot disabeld right now")
+	end)
+end
+coroutine.wrap(DCDDMMK_fake_script)()
+local function RTZUAY_fake_script() -- esp.LocalScript 
+	local script = Instance.new('LocalScript', esp)
+
+	local button = script.Parent
+	local espActive = false -- Tracks whether ESP is active
+	local updateInterval = 0.5 -- Interval in seconds for updating ESP
+	
+	-- Function to create ESP for a target object
+	local function createESP(target, color)
+		if not target:FindFirstChild("ESPHighlight") then
+			local highlight = Instance.new("Highlight")
+			highlight.Name = "ESPHighlight"
+			highlight.Parent = target
+			highlight.FillColor = color or Color3.fromRGB(255, 255, 255) -- Default to green
+			highlight.OutlineColor = Color3.fromRGB(255, 0, 4) -- White outline
+			highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+		end
+	
+		if not target:FindFirstChild("ESPBillboard") then
+			local billboard = Instance.new("BillboardGui")
+			billboard.Name = "ESPBillboard"
+			billboard.Parent = target
+			billboard.Adornee = target:FindFirstChild("HumanoidRootPart") or target.PrimaryPart
+			billboard.Size = UDim2.new(0, 200, 0, 50)
+			billboard.StudsOffset = Vector3.new(0, 3, 0)
+			billboard.AlwaysOnTop = true
+	
+			local textLabel = Instance.new("TextLabel")
+			textLabel.Parent = billboard
+			textLabel.Size = UDim2.new(1, 0, 1, 0)
+			textLabel.BackgroundTransparency = 1
+			textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			textLabel.TextStrokeTransparency = 0
+			textLabel.TextScaled = true
+	
+			local humanoid = target:FindFirstChild("Humanoid")
+			if humanoid then
+				textLabel.Text = target.Name .. " | Health: " .. math.floor(humanoid.Health) .. "/" .. math.floor(humanoid.MaxHealth)
+	
+				-- Update health dynamically
+				humanoid:GetPropertyChangedSignal("Health"):Connect(function()
+					textLabel.Text = target.Name .. " | Health: " .. math.floor(humanoid.Health) .. "/" .. math.floor(humanoid.MaxHealth)
+				end)
+			end
+		end
+	end
+	
+	-- Function to remove ESP from a target object
+	local function removeESP(target)
+		local espHighlight = target:FindFirstChild("ESPHighlight")
+		if espHighlight then
+			espHighlight:Destroy()
+		end
+	
+		local espBillboard = target:FindFirstChild("ESPBillboard")
+		if espBillboard then
+			espBillboard:Destroy()
+		end
+	end
+	
+	-- Function to update ESP continuously
+	local function updateESP()
+		while espActive do
+			local player = game.Players.LocalPlayer
+			local character = player.Character or player.CharacterAdded:Wait()
+			local rootPart = character:FindFirstChild("HumanoidRootPart")
+	
+			if rootPart then
+				for _, entity in pairs(workspace:GetDescendants()) do
+					if entity:IsA("Model") and entity:FindFirstChild("Humanoid") then
+						local targetRoot = entity:FindFirstChild("HumanoidRootPart") or entity.PrimaryPart
+						if targetRoot and (targetRoot.Position - rootPart.Position).Magnitude <= 300 then
+							createESP(entity, Color3.fromRGB(255, 255, 0)) -- Green for humanoids
+						else
+							removeESP(entity) -- Remove ESP for entities outside the radius
+						end
+					end
+				end
+			end
+	
+			wait(updateInterval)
+		end
+	
+		-- Remove all ESP when deactivated
+		for _, entity in pairs(workspace:GetDescendants()) do
+			if entity:IsA("Model") and entity:FindFirstChild("Humanoid") then
+				removeESP(entity)
+			end
+		end
+	end
+	
+	-- Function to toggle ESP
+	local function toggleESP()
+		espActive = not espActive
+		button.Text = espActive and "Disable ESP" or "Enable ESP"
+	
+		if espActive then
+			coroutine.wrap(updateESP)()
+		end
+	end
+	
+	-- Listen for button click
+	button.MouseButton1Click:Connect(toggleESP)
+	
+end
+coroutine.wrap(RTZUAY_fake_script)()
+local function KQUORF_fake_script() -- noclip.LocalScript 
+	local script = Instance.new('LocalScript', noclip)
+
+	local button = script.Parent -- Reference to the TextButton
+	local isGyat = false -- Toggle state
+	local isCollisionsDisabled = false -- Tracks if collisions are currently disabled
+	
+	-- Define the ground parts manually or dynamically
+	local groundParts = {} -- Store ground parts here
+	
+	-- Function to populate ground parts dynamically
+	local function findGroundParts()
+		for _, descendant in pairs(workspace:GetDescendants()) do
+			if descendant:IsA("BasePart") and descendant.Position.Y <= 0 then
+				table.insert(groundParts, descendant)
+			end
+		end
+	end
+	
+	-- Function to disable collisions, excluding ground
+	local function disableCollisions()
+		for _, descendant in pairs(workspace:GetDescendants()) do
+			if descendant:IsA("BasePart") then
+				if not table.find(groundParts, descendant) then
+					descendant.CanCollide = false
+				end
+			end
+		end
+		isCollisionsDisabled = true
+	end
+	
+	-- Function to enable collisions
+	local function enableCollisions()
+		for _, descendant in pairs(workspace:GetDescendants()) do
+			if descendant:IsA("BasePart") then
+				descendant.CanCollide = true
+			end
+		end
+		isCollisionsDisabled = false
+	end
+	
+	-- Function to toggle button text
+	local function toggleButtonText()
+		if isGyat then
+			button.Text = "Noclip:off"
+		else
+			button.Text = "Noclip:on"
+		end
+		isGyat = not isGyat -- Flip the toggle state
+	end
+	
+	-- Connect button click to the function
+	button.MouseButton1Click:Connect(function()
+		if #groundParts == 0 then
+			findGroundParts() -- Populate ground parts if not already found
+		end
+	
+		if isCollisionsDisabled then
+			enableCollisions()
+			print("HAHA EXLOITER HAHAHAHAHA")
+		else
+			disableCollisions()
+			print("HAHA EXLOITER HAHAHAHAHA")
+		end
+	
+		toggleButtonText()
+	end)
+	
+end
+coroutine.wrap(KQUORF_fake_script)()
